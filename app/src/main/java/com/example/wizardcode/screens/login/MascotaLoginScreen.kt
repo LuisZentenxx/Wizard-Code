@@ -7,8 +7,15 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Visibility
+import androidx.compose.material.icons.filled.VisibilityOff
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -57,6 +64,10 @@ fun MascotaLoginScreen(navController: NavController){
                         email, password ->
                 }
             }
+
+            Button(onClick = { /*TODO*/ }) {
+                Text("Login")
+            }
         }
 
     }
@@ -89,7 +100,23 @@ fun UserForm(isCreateAccount: Boolean = false,
             labelId = "Password",
             passwordVisible = passwordVisible
         )
+        SubmitButton(
+            textId = if (isCreateAccount) "Create Account" else "Login"
+        )
 
+    }
+
+}
+
+@Composable
+fun SubmitButton(
+    textId: String
+) {
+    Button(onClick = { /*TODO*/ },
+    modifier = Modifier.padding(3.dp).fillMaxWidth(),
+    shape = CircleShape) {
+        Text(text = textId,
+        modifier = Modifier.padding(5.dp))
     }
 
 }
@@ -118,10 +145,30 @@ fun PasswordInput(passwordState: MutableState<String>,
         visualTransformation = visualTransformation,
         trailingIcon = {
             if (passwordState.value.isNotBlank()) {
-
+                PasswordVisibleIcon(passwordVisible)
             }
+            else null
         }
     )
+}
+
+@Composable
+fun PasswordVisibleIcon(passwordVisible: MutableState<Boolean>)
+{
+    val image =
+        if (passwordVisible.value) {
+            Icons.Default.VisibilityOff
+        }else{
+            Icons.Default.Visibility
+        }
+    IconButton(onClick = {
+        passwordVisible.value = !passwordVisible.value
+    }) {
+        Icon(
+            imageVector = image,
+            contentDescription = "")
+
+    }
 }
 
 @Composable
@@ -133,7 +180,6 @@ fun EmailInput(
         valueState = emailState,
         labelId = labelId,
         keyboardType = KeyboardType.Email
-
     )
 
 }
