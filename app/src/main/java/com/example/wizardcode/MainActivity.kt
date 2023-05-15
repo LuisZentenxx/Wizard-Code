@@ -15,7 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.wizardcode.navigation.MascotaNavigation
+import com.example.wizardcode.navigation.Navigation
 import com.example.wizardcode.ui.theme.WizardCodeTheme
 
 class MainActivity : ComponentActivity() {
@@ -46,7 +46,7 @@ class MainActivity : ComponentActivity() {
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
-                MascotaNavigation()
+                Navigation()
             }
 
         }

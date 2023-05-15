@@ -1,8 +1,8 @@
 package com.example.wizardcode.navigation
 
 
-enum class MascotaScreens {
+enum class Screens {
     SplashScreen,
     LoginScreen,
-    MascotaHomeScreen
+    HomeScreen
 }

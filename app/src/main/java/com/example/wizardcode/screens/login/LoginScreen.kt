@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
@@ -22,6 +23,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -34,7 +36,7 @@ import androidx.navigation.NavController
 import com.example.wizardcode.R
 
 @Composable
-fun MascotaLoginScreen(navController: NavController){
+fun LoginScreen(navController: NavController){
 
     val showLoginForm = rememberSaveable {
         mutableStateOf(true)
@@ -64,10 +66,6 @@ fun MascotaLoginScreen(navController: NavController){
                         email, password ->
                 }
             }
-
-            Button(onClick = { /*TODO*/ }) {
-                Text("Login")
-            }
         }
 
     }
@@ -89,6 +87,10 @@ fun UserForm(isCreateAccount: Boolean = false,
     val passwordVisible = rememberSaveable {
         mutableStateOf(false)
     }
+
+    val valid = remember(email.value, password.value) {
+        email.value.trim().isNotEmpty() && password.value.trim().isNotEmpty()
+    }
     Column (
         horizontalAlignment = Alignment.CenterHorizontally)
     {
@@ -101,8 +103,11 @@ fun UserForm(isCreateAccount: Boolean = false,
             passwordVisible = passwordVisible
         )
         SubmitButton(
-            textId = if (isCreateAccount) "Create Account" else "Login"
-        )
+            textId = if (isCreateAccount) "Create Account" else "Login",
+            inputValid = valid
+        ) {
+            onDone(email.value.trim(), password.value.trim())
+        }
 
     }
 
@@ -110,11 +115,15 @@ fun UserForm(isCreateAccount: Boolean = false,
 
 @Composable
 fun SubmitButton(
-    textId: String
+    textId: String,
+    inputValid : Boolean,
+    onClick : () -> Unit
 ) {
-    Button(onClick = { /*TODO*/ },
-    modifier = Modifier.padding(3.dp).fillMaxWidth(),
-    shape = CircleShape) {
+    Button(onClick = onClick,
+    modifier = Modifier.padding(3.dp).width(200.dp),
+    shape = CircleShape,
+    enabled = inputValid
+    ) {
         Text(text = textId,
         modifier = Modifier.padding(5.dp))
     }

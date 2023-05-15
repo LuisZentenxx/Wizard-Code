@@ -13,14 +13,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
 import com.example.wizardcode.R
-import com.example.wizardcode.navigation.MascotaScreens
+import com.example.wizardcode.navigation.Screens
 import kotlinx.coroutines.delay
 
 @Composable
-fun MascotaSplashScreen(navController: NavController) {
+fun SplashScreen(navController: NavController) {
     LaunchedEffect(key1 = true) {
         delay(2000L)
-        navController.navigate(MascotaScreens.LoginScreen.name)
+        navController.navigate(Screens.LoginScreen.name)
     }
 
     Column (
