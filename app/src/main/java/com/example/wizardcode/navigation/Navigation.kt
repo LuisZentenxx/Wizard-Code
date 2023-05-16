@@ -7,7 +7,15 @@ import androidx.navigation.compose.rememberNavController
 import com.example.wizardcode.screens.SplashScreen
 import com.example.wizardcode.screens.home.HomeScreen
 import com.example.wizardcode.screens.login.LoginScreen
-
+/*
+       * @Autor -> Luis Zenteno Mardones
+       * navController -> Objeto que realiza las transacciones entre diferentes destinos
+       * NavHost -> Contenedor que se encarga de mostrar los diferentes destinos (Screens)
+       * startDestination -> Destino inicial que se muestra al cargar el NavHost
+       * NavGraphBuilder -> Permite definir las conexiones entre las pantallas y cómo los usuarios pueden navegar entre ellas,
+       * NavBackStackEntry -> Proporciona información y métodos para acceder y modificar el estado de navegación.
+       * composable -> Define las diferentes pantallas disponibles dentro del NavHost
+*/
 @Composable
 fun Navigation(){
 

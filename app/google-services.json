@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "167300853484",
+    "project_id": "wizardcode-3a04b",
+    "storage_bucket": "wizardcode-3a04b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167300853484:android:c3e377aba05c2003d2ffc9",
+        "android_client_info": {
+          "package_name": "com.example.wizardcode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167300853484-qn1ollov72cfro4bleur75gh1cn0tukn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAMZJrPK_S8DEJcel_TL5LuTX0v0Ew2Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167300853484-qn1ollov72cfro4bleur75gh1cn0tukn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

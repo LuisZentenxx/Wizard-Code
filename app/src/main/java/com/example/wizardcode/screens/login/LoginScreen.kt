@@ -42,11 +42,15 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.wizardcode.R
+import com.example.wizardcode.navigation.Screens
+import com.example.wizardcode.screens.home.HomeScreen
 
 
 @Composable
-//NavController permite manejar la navegación entre diferentes fragments o destinos
-fun LoginScreen(navController: NavController){
+fun LoginScreen(
+    navController: NavController,
+    viewModel: LoginScreenViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
+){
 
     //Crea un estado mutable que también puede ser guardado y restaurado automáticamente.
     val showLoginForm = rememberSaveable {
@@ -69,6 +73,9 @@ fun LoginScreen(navController: NavController){
                     isCreateAccount = false
                 ){
                         email, password ->
+                    viewModel.signInWithEmailAndPassword(email,password) {
+                        navController.navigate(Screens.HomeScreen.name)
+                    }
                 }
             } else {
                 Image(painter = painterResource(
@@ -78,7 +85,13 @@ fun LoginScreen(navController: NavController){
                 Text(text = "Create an account")
                 UserForm(
                     isCreateAccount = true
-                ) { email, password ->
+                )
+                {
+                        email, password ->
+                    viewModel.createWithEmailAndPassword(email, password) {
+                        navController.navigate(Screens.HomeScreen.name)
+                    }
+
                 }
             }
                 Spacer(modifier = Modifier.height(15.dp))
@@ -96,7 +109,8 @@ fun LoginScreen(navController: NavController){
 
                     Text(text = text1)
                     Text(text = text2,
-                        modifier = Modifier.clickable { showLoginForm.value = !showLoginForm.value }
+                        modifier = Modifier
+                            .clickable { showLoginForm.value = !showLoginForm.value }
                             .padding(start = 5.dp), color = MaterialTheme.colorScheme.primary
                     )
                 }
