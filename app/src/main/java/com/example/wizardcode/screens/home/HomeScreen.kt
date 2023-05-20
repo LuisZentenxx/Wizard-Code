@@ -2,6 +2,7 @@ package com.example.wizardcode.screens.home
 
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 
 import androidx.compose.foundation.layout.Box
@@ -27,6 +28,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.wizardcode.R
+import com.example.wizardcode.navigation.Screens
 
 @Composable
 fun HomeScreen(navController: NavController) {
@@ -54,6 +56,9 @@ fun HomeScreen(navController: NavController) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(120.dp)
+                    .clickable{
+                        navController.navigate(Screens.JetpackComposeScreen.name)
+                    }
             ) {
                 Row(
                     modifier = Modifier.fillMaxWidth(),
@@ -83,7 +88,7 @@ fun HomeScreen(navController: NavController) {
                     ) {
                         Text("LEARN PYTHON")
                         Image(
-                            painter = painterResource(id = R.drawable.icon_python),
+                            painter = painterResource(id = R.drawable.pyt),
                             contentDescription = null
                         )
                     }

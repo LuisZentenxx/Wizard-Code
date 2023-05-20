@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.wizardcode.screens.SplashScreen
 import com.example.wizardcode.screens.home.HomeScreen
+import com.example.wizardcode.screens.learn.JetpackComposeScreen
 import com.example.wizardcode.screens.login.LoginScreen
 /*
        * @Autor -> Luis Zenteno Mardones
@@ -35,6 +36,10 @@ fun Navigation(){
 
         composable(Screens.HomeScreen.name) {
             HomeScreen(navController = navController)
+        }
+
+        composable(Screens.JetpackComposeScreen.name){
+            JetpackComposeScreen(navController = navController)
         }
     }
 }
