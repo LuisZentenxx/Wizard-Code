@@ -41,3 +41,9 @@ Luis se dedicó a recopilar información fresca de fuentes confiables y oficiale
 
 ## SignIn y SignUp 
 ![](https://github.com/LuisZentenxx/Wizard-Code/blob/master/img-Read/App.jpg?raw=true)
+
+## Registro de usuario en Firebase
+![](https://github.com/LuisZentenxx/Wizard-Code/blob/master/img-Read/firebase.png?raw=true)
+
+## Home Screen
+![](https://github.com/LuisZentenxx/Wizard-Code/blob/master/img-Read/home.jpg?raw=true)
