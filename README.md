@@ -35,10 +35,41 @@ Luis se dedicó a recopilar información fresca de fuentes confiables y oficiale
 | 15     | Brecha lingüistica en los contenidos de nuevas tecnologias.
 |
 
+## Problematicas Cluster
+
+| Cluster | Problemáticas |
+|---------|--------------|
+| Acceso a contenido actualizado | - Dificultad para encontrar contenido actualizado. <br> - Necesidad de aprendizaje continuo, debido a las rápidas innovaciones y actualizaciones tecnológicas. <br> - Falta de recursos y programas educativos en diferentes idiomas. <br> - Limitaciones de tiempo y flexibilidad. |
+| Enfoque pedagógico y práctica | - Falta de ejemplos prácticos. <br> - Enfoque teórico sobre la práctica. <br> - Exceso de enfoque en la memorización y la evaluación basada en exámenes. |
+| Calidad de la educación y adaptación al mundo laboral | - Brecha en el acceso a la educación de calidad. <br> - Desconexión entre el currículo educativo y las necesidades del mundo laboral. <br> - Falta de apoyo a estudiantes con necesidades especiales. <br> - Sobrecarga de contenidos curriculares. |
+|  Interacción y diversidad de aprendizaje | - Poca interacción y retroalimentación. <br> - Inadecuada atención a estilos de aprendizaje diversos. <br> - Competencia y comparación excesiva entre estudiantes. |
+| Otros desafíos | - Desafíos para la educación autodidacta. <br> - Brecha lingüística en los contenidos de nuevas tecnologías. |
 
 
+## MVP
 
+Objetivo: Permitir a los usuarios seleccionar temas de estudio y acceder a información relevante.
 
+- Lista de contenidos: Mostrar una lista de temas de estudio disponibles.
+- Pantalla de detalles de contenido -> Mostrar información detallada sobre el tema seleccionado.
+------------------------------------------------------
+Agregar la lista de contenidos:
+
+- Crea una lista de temas de estudio en la pantalla correspondiente.
+- Utiliza una estructura clara y ordenada para mostrar los temas disponibles.
+-------------------------------------------------
+- Implementar la selección de contenido:
+
+- Permite a los usuarios seleccionar un tema de estudio de la lista.
+- Puedes utilizar botones o enlaces que lleven a la página de detalles de contenido.
+------------------------------------------------------------------
+Detalles de contenido:
+
+- Muestra información relevante sobre el tema seleccionado en la pantalla de detalles de contenido.
+- Incluye una descripción concisa y recursos adicionales si es necesario.
+-------------------------------------
+## WIZARD CODE VIEW
+--------------------------------------
 ## SignIn y SignUp 
 ![](https://github.com/LuisZentenxx/Wizard-Code/blob/master/img-Read/App.jpg?raw=true)
 
