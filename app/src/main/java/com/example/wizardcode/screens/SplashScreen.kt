@@ -32,7 +32,7 @@ fun SplashScreen(navController: NavController) {
        /* EN PROCESO
        ----------------------------------------------
         Realiza una comprobacion sobre el estado de autenticación del usuario actual en Firebase.
-        Si el usuario ya esta logeado, directamente navega hacia el HomeScreen.
+        Si el usuario ya esta logeado, directamente navega hacia el HomeScreen.*/
 
         if(FirebaseAuth.getInstance().currentUser?.email.isNullOrEmpty()) {
             navController.navigate(Screens.LoginScreen.name)
@@ -44,7 +44,7 @@ fun SplashScreen(navController: NavController) {
                 }
             }
         }
-        */
+
 
     }
 
