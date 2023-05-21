@@ -86,3 +86,6 @@ Información relevante: (Estado 👷 "Por Hacer")
 
 ## Home Screen
 ![](https://github.com/LuisZentenxx/Wizard-Code/blob/master/img-Read/home.jpg?raw=true)
+
+## Learn Modules
+![](https://github.com/LuisZentenxx/Wizard-Code/blob/master/img-Read/modulos.JPG?raw=true)
