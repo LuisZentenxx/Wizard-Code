@@ -52,27 +52,27 @@ Objetivos:
 - Ingresar a la app con una cuenta ya creada ✅
 - Seleccionar temas de estudio y acceder a información relevante. ❎
 
-Splash Screen:
+Splash Screen: (Estado  ✅)
 - Crea una pantalla de bienvenida que se muestre al iniciar la aplicación.
 - El Splash Screen puede contener el logotipo de la aplicación y una animación breve para captar la atención del usuario.
 
-Registro de usuarios:
+Registro de usuarios: (Estado  ✅)
 
 - Permite a los usuarios registrarse utilizando un correo electrónico y contraseña.
 - Implementa un formulario de registro donde los usuarios puedan ingresar su información.
 - Utilzizando la Api de autenticación de Firebase, se validan los campos del formulario y almacena la información del usuario en una base de datos otorgada por Firebase.
 
-Inicio de sesión:
+Inicio de sesión: (Estado  ✅)
 
 - Proporciona un formulario de inicio de sesión donde los usuarios puedan ingresar con su cuenta previamente creada.
 - Mediante el consumo de la Api de Firebase, se verifica la autenticación del usuario utilizando la información almacenada en la base de datos.
 
-Temas de estudio:
+Temas de estudio: (Estado  ✅)
 
 - Crea una lista de temas de estudio relevantes para tu aplicación.
 - Permite a los usuarios seleccionar un tema de estudio de la lista.
 
-Información relevante:
+Información relevante: (Estado 👷 "Por Hacer")
 
 - Diseña una interfaz donde los usuarios puedan acceder a la información relevante basada en los temas de estudio seleccionados.
 - Puedes mostrar información, tips, enlaces a recursos externos u otro tipo de contenido relacionado con los temas de estudio elegidos.
