@@ -9,5 +9,9 @@ enum class Screens {
     SplashScreen,
     LoginScreen,
     HomeScreen,
-    JetpackComposeScreen
+    JetpackComposeScreen,
+    PythonScreen,
+    JavaScreen,
+    GithubScreen,
+    KotlinScreen
 }

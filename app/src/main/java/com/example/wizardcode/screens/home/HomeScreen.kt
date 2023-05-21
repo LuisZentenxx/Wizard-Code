@@ -65,7 +65,7 @@ fun HomeScreen(navController: NavController) {
                     horizontalArrangement = Arrangement.Center,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Text("LEARN JETPACK COMPOSE")
+                    Text("APRENDE JETPACK COMPOSE")
                     Image(
                         painter = painterResource(id = R.drawable.icon_compose),
                         contentDescription = null
@@ -79,14 +79,17 @@ fun HomeScreen(navController: NavController) {
                 Card(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(120.dp)
+                        .height(120.dp).
+                            clickable{
+                                navController.navigate(Screens.PythonScreen.name)
+                            }
                 ) {
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.Center,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Text("LEARN PYTHON")
+                        Text("APRENDE PYTHON")
                         Image(
                             painter = painterResource(id = R.drawable.pyt),
                             contentDescription = null
@@ -100,7 +103,10 @@ fun HomeScreen(navController: NavController) {
                 Card(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(120.dp)
+                        .height(120.dp).
+                        clickable{
+                            navController.navigate(Screens.JavaScreen.name)
+                        }
                 ) {
                     Row(
                         modifier = Modifier.fillMaxWidth(),
@@ -108,7 +114,7 @@ fun HomeScreen(navController: NavController) {
                         verticalAlignment = Alignment.CenterVertically
                     ) {
 
-                        Text("LEARN JAVA")
+                        Text("APRENDE JAVA")
                         Image(
                             painter = painterResource(id = R.drawable.icon_java),
                             contentDescription = null
@@ -122,14 +128,17 @@ fun HomeScreen(navController: NavController) {
                 Card(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(120.dp)
+                        .height(120.dp).
+                        clickable{
+                            navController.navigate(Screens.GithubScreen.name)
+                        }
                 ) {
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.Center,
                         verticalAlignment = Alignment.CenterVertically)
                     {
-                        Text("LEARN GITHUB", fontSize = 20.sp)
+                        Text("APRENDE GITHUB", fontSize = 20.sp)
                         Spacer(modifier = Modifier.width(20.dp))
                         Image(
                             painter = painterResource(id = R.drawable.icon_git),
@@ -144,14 +153,17 @@ fun HomeScreen(navController: NavController) {
                 Card(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(120.dp)
+                        .height(120.dp).
+                        clickable{
+                            navController.navigate(Screens.KotlinScreen.name)
+                        }
                 ) {
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.Center,
                         verticalAlignment = Alignment.CenterVertically)
                     {
-                        Text("LEARN KOTLIN", fontSize = 20.sp)
+                        Text("APRENDE KOTLIN", fontSize = 20.sp)
                         Spacer(modifier = Modifier.width(20.dp))
                         Image(
                             painter = painterResource(id = R.drawable.icon_compose),
