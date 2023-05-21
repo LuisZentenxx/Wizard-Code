@@ -39,9 +39,9 @@ Luis se dedicó a recopilar información fresca de fuentes confiables y oficiale
 
 | Cluster | Problemáticas |
 |---------|--------------|
-| Educación | - Dificultad para encontrar contenido actualizado. <br> - Necesidad de aprendizaje continuo, debido a las rápidas innovaciones y actualizaciones tecnológicas. <br> - Falta de recursos y programas educativos en diferentes idiomas. <br> - Limitaciones de tiempo y flexibilidad. <br>  - Falta de ejemplos prácticos. <br> - Enfoque teórico sobre la práctica. <br> - Exceso de enfoque en la memorización y la evaluación basada en exámenes. <br> - Brecha en el acceso a la educación de calidad. <br> - Desconexión entre el currículo educativo y las necesidades del mundo laboral. <br> - Falta de apoyo a estudiantes con necesidades especiales. <br> - Sobrecarga de contenidos curriculares. |
-|  Comunicación | - Poca interacción y retroalimentación. <br> - Inadecuada atención a estilos de aprendizaje diversos. <br> - Competencia y comparación excesiva entre estudiantes. |
-| Tecnología | - Desafíos para la educación autodidacta. <br> - Brecha lingüística en los contenidos de nuevas tecnologías. |
+| Educación | - Dificultad para encontrar contenido actualizado. <br> - Necesidad de aprendizaje continuo, debido a las rápidas innovaciones y actualizaciones tecnológicas. <br> - Falta de recursos y programas educativos en diferentes idiomas. <br> - Limitaciones de tiempo y flexibilidad. <br>  - Falta de ejemplos prácticos. <br> - Enfoque teórico sobre la práctica. <br> - Inadecuada atención a estilos de aprendizaje diversos.<br> - Exceso de enfoque en la memorización y la evaluación basada en exámenes. <br> - Brecha en el acceso a la educación de calidad. <br> - Desconexión entre el currículo educativo y las necesidades del mundo laboral. <br> - Falta de apoyo a estudiantes con necesidades especiales. <br> - Sobrecarga de contenidos curriculares. |
+|  Comunicación | - Brecha lingüística en los contenidos de nuevas tecnologías. <br> - Poca interacción y retroalimentación. <br> - Competencia y comparación excesiva entre estudiantes. <br> - Falta de apoyo a estudiantes con necesidades especiales. |
+| Tecnología | - Desafíos para la educación autodidacta. |
 
 
 ## MVP
@@ -60,23 +60,22 @@ Registro de usuarios:
 
 - Permite a los usuarios registrarse utilizando un correo electrónico y contraseña.
 - Implementa un formulario de registro donde los usuarios puedan ingresar su información.
-- Valida los campos del formulario y almacena la información del usuario en una base de datos.
+- Utilzizando la Api de autenticación de Firebase, se validan los campos del formulario y almacena la información del usuario en una base de datos otorgada por Firebase.
 
 Inicio de sesión:
 
 - Proporciona un formulario de inicio de sesión donde los usuarios puedan ingresar con su cuenta previamente creada.
-- Verifica la autenticación del usuario utilizando la información almacenada en la base de datos.
+- Mediante el consumo de la Api de Firebase, se verifica la autenticación del usuario utilizando la información almacenada en la base de datos.
 
 Temas de estudio:
 
 - Crea una lista de temas de estudio relevantes para tu aplicación.
-- Permite a los usuarios seleccionar uno o varios temas de estudio de la lista.
-- Almacena las selecciones del usuario en la base de datos para su posterior uso.
+- Permite a los usuarios seleccionar un tema de estudio de la lista.
 
 Información relevante:
 
 - Diseña una interfaz donde los usuarios puedan acceder a la información relevante basada en los temas de estudio seleccionados.
-- Puedes mostrar artículos, videos, enlaces a recursos externos u otro tipo de contenido relacionado con los temas de estudio elegidos.
+- Puedes mostrar información, tips, enlaces a recursos externos u otro tipo de contenido relacionado con los temas de estudio elegidos.
 -------------------------------------
 ## WIZARD CODE VIEW
 ## SignIn y SignUp 
