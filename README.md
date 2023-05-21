@@ -33,43 +33,52 @@ Luis se dedicó a recopilar información fresca de fuentes confiables y oficiale
 | 13     | Sobrecarga de contenidos curriculares. |
 | 14     | Competencia y comparación excesiva entre estudiantes. |
 | 15     | Brecha lingüistica en los contenidos de nuevas tecnologias.
-|
+
 
 ## Problematicas Cluster
 
 | Cluster | Problemáticas |
 |---------|--------------|
-| Acceso a contenido actualizado | - Dificultad para encontrar contenido actualizado. <br> - Necesidad de aprendizaje continuo, debido a las rápidas innovaciones y actualizaciones tecnológicas. <br> - Falta de recursos y programas educativos en diferentes idiomas. <br> - Limitaciones de tiempo y flexibilidad. |
-| Enfoque pedagógico y práctica | - Falta de ejemplos prácticos. <br> - Enfoque teórico sobre la práctica. <br> - Exceso de enfoque en la memorización y la evaluación basada en exámenes. |
-| Calidad de la educación y adaptación al mundo laboral | - Brecha en el acceso a la educación de calidad. <br> - Desconexión entre el currículo educativo y las necesidades del mundo laboral. <br> - Falta de apoyo a estudiantes con necesidades especiales. <br> - Sobrecarga de contenidos curriculares. |
-|  Interacción y diversidad de aprendizaje | - Poca interacción y retroalimentación. <br> - Inadecuada atención a estilos de aprendizaje diversos. <br> - Competencia y comparación excesiva entre estudiantes. |
-| Otros desafíos | - Desafíos para la educación autodidacta. <br> - Brecha lingüística en los contenidos de nuevas tecnologías. |
+| Educación | - Dificultad para encontrar contenido actualizado. <br> - Necesidad de aprendizaje continuo, debido a las rápidas innovaciones y actualizaciones tecnológicas. <br> - Falta de recursos y programas educativos en diferentes idiomas. <br> - Limitaciones de tiempo y flexibilidad. <br>  - Falta de ejemplos prácticos. <br> - Enfoque teórico sobre la práctica. <br> - Exceso de enfoque en la memorización y la evaluación basada en exámenes. <br> - Brecha en el acceso a la educación de calidad. <br> - Desconexión entre el currículo educativo y las necesidades del mundo laboral. <br> - Falta de apoyo a estudiantes con necesidades especiales. <br> - Sobrecarga de contenidos curriculares. |
+|  Comunicación | - Poca interacción y retroalimentación. <br> - Inadecuada atención a estilos de aprendizaje diversos. <br> - Competencia y comparación excesiva entre estudiantes. |
+| Tecnología | - Desafíos para la educación autodidacta. <br> - Brecha lingüística en los contenidos de nuevas tecnologías. |
 
 
 ## MVP
 
-Objetivo: Permitir a los usuarios seleccionar temas de estudio y acceder a información relevante.
+Objetivos: 
+- Mostrar un Splash Screen al iniciar la aplicación. ✅
+- Permitir a los usuarios registrarse con un email y contraseña. ✅
+- Ingresar a la app con una cuenta ya creada ✅
+- Seleccionar temas de estudio y acceder a información relevante. ❎
 
-- Lista de contenidos: Mostrar una lista de temas de estudio disponibles.
-- Pantalla de detalles de contenido -> Mostrar información detallada sobre el tema seleccionado.
-------------------------------------------------------
-Agregar la lista de contenidos:
+Splash Screen:
+- Crea una pantalla de bienvenida que se muestre al iniciar la aplicación.
+- El Splash Screen puede contener el logotipo de la aplicación y una animación breve para captar la atención del usuario.
 
-- Crea una lista de temas de estudio en la pantalla correspondiente.
-- Utiliza una estructura clara y ordenada para mostrar los temas disponibles.
--------------------------------------------------
-- Implementar la selección de contenido:
+Registro de usuarios:
 
-- Permite a los usuarios seleccionar un tema de estudio de la lista.
-- Puedes utilizar botones o enlaces que lleven a la página de detalles de contenido.
-------------------------------------------------------------------
-Detalles de contenido:
+- Permite a los usuarios registrarse utilizando un correo electrónico y contraseña.
+- Implementa un formulario de registro donde los usuarios puedan ingresar su información.
+- Valida los campos del formulario y almacena la información del usuario en una base de datos.
 
-- Muestra información relevante sobre el tema seleccionado en la pantalla de detalles de contenido.
-- Incluye una descripción concisa y recursos adicionales si es necesario.
+Inicio de sesión:
+
+- Proporciona un formulario de inicio de sesión donde los usuarios puedan ingresar con su cuenta previamente creada.
+- Verifica la autenticación del usuario utilizando la información almacenada en la base de datos.
+
+Temas de estudio:
+
+- Crea una lista de temas de estudio relevantes para tu aplicación.
+- Permite a los usuarios seleccionar uno o varios temas de estudio de la lista.
+- Almacena las selecciones del usuario en la base de datos para su posterior uso.
+
+Información relevante:
+
+- Diseña una interfaz donde los usuarios puedan acceder a la información relevante basada en los temas de estudio seleccionados.
+- Puedes mostrar artículos, videos, enlaces a recursos externos u otro tipo de contenido relacionado con los temas de estudio elegidos.
 -------------------------------------
 ## WIZARD CODE VIEW
---------------------------------------
 ## SignIn y SignUp 
 ![](https://github.com/LuisZentenxx/Wizard-Code/blob/master/img-Read/App.jpg?raw=true)
 
